@@ -16,7 +16,7 @@ const Home = () => {
           <Text>Crisha sins</Text>
         </View>
       </View>
-      <View>
+      <View style={styles.mainCard}>
         <Text>kam kore</Text>
       </View>
     </View>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   cardOne: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: `#00FFFF`,
+    backgroundColor: `#ffffff`,
     marginHorizontal: 10,
     height: 80,
     alignItems: "center",
@@ -37,7 +37,23 @@ const styles = StyleSheet.create({
     shadowColor: "#00FFFF",
     shadowOffset: {
       width: 0,
-      height: 10,
+      height: 15,
+    },
+    shadowOpacity: 10,
+    shadowRadius: 15,
+    elevation: 7,
+  },
+  mainCard: {
+    display: "flex",
+    backgroundColor: "#ffffff",
+    marginHorizontal: 10,
+    marginVertical: 10,
+    borderRadius: 10,
+    height: 300,
+    shadowColor: "#e90ebc",
+    shadowOffset: {
+      width: 0,
+      height: 45,
     },
     shadowOpacity: 10,
     shadowRadius: 15,
